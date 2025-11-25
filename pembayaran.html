@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pembayaran</title>
+</head>
+<body>
+
+    <h2>Halaman Pembayaran</h2>
+    <p>Silakan lakukan pembayaran sesuai instruksi.</p>
+
+    <button onclick="window.location.href='topup.html'">Kembali</button>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pembayaran - Top Up ML</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background: #0066cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            background: white;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            font-size: 16px;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 10px;
+            margin: 7px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #005fcc;
+        }
+
+        .back-btn {
+            margin-top: 15px;
+            background: #666;
+        }
+
+        .back-btn:hover {
+            background: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        Pembayaran Top Up Mobile Legends
+    </div>
+
+    <div class="container">
+        <h2>Detail Pembelian</h2>
+
+        <p><b>ID Player:</b> (otomatis dari halaman sebelumnya)</p>
+        <p><b>Nominal:</b> (otomatis dari halaman sebelumnya)</p>
+
+        <hr>
+
+        <h3>Pilih Metode Pembayaran</h3>
+
+        <select id="metode">
+            <option value="QRIS">QRIS</option>
+            <option value="Dana">Dana</option>
+            <option value="OVO">OVO</option>
+            <option value="GoPay">GoPay</option>
+            <option value="Bank BRI">Bank BRI</option>
+            <option value="Bank Mandiri">Bank Mandiri</option>
+        </select>
+
+        <button onclick="lanjutBayar()">Bayar Sekarang</button>
+
+        <button class="back-btn" onclick="window.location.href='topup.html'">Kembali ke Halaman Top Up</button>
+    </div>
+
+    <script>
+        function lanjutBayar() {
+            alert("Pembayaran diproses melalui: " + document.getElementById("metode").value 
+            + "\nTerima kasih telah melakukan top up!");
+        }
+    </script>
+
+</body>
+</html>
+
+
+</body>
+</html>

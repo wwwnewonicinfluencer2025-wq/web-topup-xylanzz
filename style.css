@@ -1,0 +1,16 @@
+.input-short {
+    width: 100px;       /* Ubah panjang input (lebar) */
+    height: 10px;       /* Ubah tinggi input */
+    padding: 1px;
+    border-radius: 8px;
+    border: 2px solid #1e88e5;
+    font-size: 16px;
+}
+
+.select-short {
+    width: 300px;   /* ubah sesuai panjang yang kamu mau */
+    height: 45px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid #1e88e5;
+}
